@@ -1,0 +1,1 @@
+import{f as i,a as s}from"./formatKeys-Blap60VP.js";async function m(t,a){const r=i(t),e=s(a),o=r+e,n=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(o));return Array.from(new Uint8Array(n)).map(c=>c.toString(16).padStart(2,"0")).join("")}export{m as c};
